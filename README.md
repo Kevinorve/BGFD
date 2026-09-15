@@ -162,13 +162,6 @@ work_dirs/<s2looking_experiment>/
 
 建议每次实验使用独立 `work_dirs/<experiment_name>/`，避免覆盖已有结果。
 
-## 配置和路径迁移规则
-
-1. 从仓库根目录运行命令。
-2. 优先使用配置中的相对 `data_root`；也可通过 `--cfg-options data_root=...` 覆盖。
-3. 权重、预测和日志全部写入 `work_dirs/` 或用户指定的相对输出目录。
-4. 不在配置、shell 脚本或 README 中写入服务器绝对路径、用户名或临时目录。
-5. GitHub 发布时，大型数据集、训练输出和 checkpoint 可通过 `.gitignore` 排除，并在此 README 中说明其相对目录约定。
 
 ## 相关文件
 
@@ -179,5 +172,3 @@ work_dirs/<s2looking_experiment>/
 - `configs/0cd_ce/`、`configs/xy_test/`、`configs/changeclip_c2d_distri/`：四个数据集的配置集合；
 - `pretrained/`：CLIP 和骨干预训练参数；
 - `work_dirs/`：实验日志和权重输出。
-
-本说明只整理入口和相对路径约定，不声称对每个历史配置或权重进行了实际可行性验证。
