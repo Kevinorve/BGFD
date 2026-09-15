@@ -1,4 +1,16 @@
 work_dirs*/*
+work_dirs/
+workspace/
+*.pth
+*.pth.tar
+*.pt
+*.tar
+*.zip
+*.log
+nohup.out
+__pycache__/
+*/__pycache__/
+*.ipynb_checkpoints/
 pretrained/RN50.pt
 pretrained/ViT-B-16.pt
 pretrained/ViT-B-32.pt
